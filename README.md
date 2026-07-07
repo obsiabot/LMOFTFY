@@ -10,7 +10,7 @@ lien généré.
 Le lien ressemble à ceci :
 
 ```text
-index.html?q=unisciel
+https://obsiabot.github.io/LMOFTFY/index.html?q=charte+ia
 ```
 
 Quand la personne ouvre le lien, une courte démonstration se lance puis redirige
@@ -26,23 +26,13 @@ les résultats avec le mot-clé recherché.
 Pour tenter une ouverture directe du premier résultat :
 
 ```text
-index.html?q=actif&mode=lucky
+https://obsiabot.github.io/LMOFTFY/index.html?q=turing&mode=lucky
 ```
-
-Dans ce mode, la page interroge l'API REST WordPress native :
-
-```text
-https://observatoire-ia-formation.univ-amu.fr/wp-json/wp/v2/search
-```
-
-Elle demande un seul résultat avec `per_page=1`, puis ouvre l'URL renvoyée. Si
-l'API ne répond pas ou ne renvoie aucun résultat, le lien ouvre les résultats de
-recherche classiques.
 
 ## Option
 
 Pour afficher la page de démonstration sans lancement automatique :
 
 ```text
-index.html?q=unisciel&auto=0
+https://obsiabot.github.io/LMOFTFY/index.html?q=face-a-lia-generative-lobjection-de-conscience&auto=0
 ```
