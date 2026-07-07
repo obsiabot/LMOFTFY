@@ -34,5 +34,5 @@ https://obsiabot.github.io/LMOFTFY/index.html?q=turing&mode=lucky
 Pour afficher la page de démonstration sans lancement automatique :
 
 ```text
-https://obsiabot.github.io/LMOFTFY/index.html?q=face-a-lia-generative-lobjection-de-conscience&auto=0
+https://obsiabot.github.io/LMOFTFY/index.html?q=objection&auto=0
 ```
