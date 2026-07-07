@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recherche ObsiaFormation</title>
+    <meta
+      name="description"
+      content="Créer un lien de recherche guidée vers ObsiaFormation."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app" data-view="builder">
+      <section class="creator" aria-labelledby="creator-title">
+        <div class="panel">
+          <div class="brand">
+            <span>Obsia</span>Formation
+          </div>
+
+          <h1 id="creator-title">La recherche sur Obsia...</h1>
+          <p class="intro">
+            Saisissez un mot-clé, choisissez le type d'ouverture, puis récupérez
+            le lien à envoyer.
+          </p>
+
+          <form class="search-form" id="linkForm">
+            <label for="keyword">Mot-clé</label>
+            <div class="input-row">
+              <input
+                id="keyword"
+                name="keyword"
+                type="search"
+                autocomplete="off"
+                placeholder="e.g., prompt, actif, charte, ChatGPT ..."
+                required
+              >
+              <button type="submit">Créer le lien ↵</button>
+            </div>
+
+            <fieldset class="mode-group">
+              <legend>Ouverture</legend>
+              <label>
+                <input type="radio" name="mode" value="search" checked>
+                Résultats de recherche
+              </label>
+              <label>
+                <input type="radio" name="mode" value="lucky">
+                J'ai de la chance
+              </label>
+            </fieldset>
+          </form>
+
+          <div class="share-box" id="shareBox" hidden>
+            <label for="shareUrl">Lien à envoyer</label>
+            <div class="input-row">
+              <input id="shareUrl" type="text" readonly>
+              <button type="button" id="copyButton">Copier</button>
+            </div>
+            <a class="preview-link" id="previewLink" href="#">Tester ↵</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-shell" aria-label="Recherche ObsiaFormation">
+        <header class="site-header">
+          <div class="site-logo"><span>Obsia</span>Formation</div>
+          <nav aria-label="Navigation">
+            <span>Observatoire</span>
+            <span>Veille</span>
+            <span>Formation</span>
+            <span>Agenda</span>
+            <button class="nav-search" type="button" aria-label="Recherche">
+              ⌕
+            </button>
+          </nav>
+        </header>
+
+        <section class="search-stage" aria-live="polite">
+          <p class="eyebrow">Recherche</p>
+          <h2 id="demoTitle">Que souhaitez-vous chercher ?</h2>
+          <p id="statusLine">Ouverture du moteur de recherche.</p>
+
+          <div class="search-bar" id="searchBar">
+            <span class="magnifier" aria-hidden="true">⌕</span>
+            <span id="typedTerm"></span>
+            <span class="caret" aria-hidden="true"></span>
+          </div>
+
+          <div class="result-preview" id="resultPreview" hidden>
+            <p class="result-label" id="resultLabel">Premier résultat</p>
+            <a id="firstResultLink" href="#">
+              Générateurs &amp; modèles de prompts ACTIF et les autres
+            </a>
+            <p id="resultExcerpt">
+              Un repère pour structurer ses prompts avec le modèle ACTIF.
+            </p>
+          </div>
+
+          <div class="countdown" id="countdown" hidden>
+            Redirection dans <strong id="countValue">3</strong>
+          </div>
+
+          <div class="actions">
+            <button type="button" id="playButton">Lancer</button>
+            <a id="directLink" href="#">Ouvrir maintenant</a>
+          </div>
+        </section>
+      </section>
+
+      <footer class="site-footer">
+        <span>Fait avec 💙 par</span>
+        <a href="https://observatoire-ia-formation.univ-amu.fr/membres/obsiabot/">
+          <span>@obsiabot</span>
+          <img
+            src="https://observatoire-ia-formation.univ-amu.fr/not-s3-storage/avatars/282/1766003058-bpfull.png"
+            alt=""
+            width="28"
+            height="28"
+          >
+        </a>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
